@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BMIBuddy!</string>
+    <string name="app_name">BMI Buddy</string>
+<string name="lblTitle">BMI Buddy</string>
+<string name="heightHint">Enter Height</string>
+<string name="weightHint">Enter Weight</string>
+<string name="YourBMI">Your BMI is : </string>
+<string name="toggleUnits">Toggle the Units</string>
+
+<string name="btnCalculate">Calculate!</string>
+<string name="bmi_value"></string>
+<string name="menuClear">Clear</string>
+
+
+
+<string name="preMsg">The ideal weight for your height is between</string>
+</resources>

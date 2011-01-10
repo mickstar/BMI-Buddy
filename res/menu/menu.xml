@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/toggleUnits" android:title="@string/toggleUnits" android:icon="@com.mickstarify.BMIBuddy:drawable/ic_menu_refresh"/>
+	<item android:id="@+id/menuClear" android:title="@string/menuClear" android:icon="@com.mickstarify.BMIBuddy:drawable/ic_menu_delete"/>
+</menu>

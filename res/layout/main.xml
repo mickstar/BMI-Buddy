@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="match_parent">
+
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/title"
+		android:orientation="horizontal" android:gravity="center"
+		android:layout_gravity="center" android:layout_weight="0.05">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_gravity="center"
+			android:id="@+id/lblTitle" android:text="@string/lblTitle"
+			android:drawingCacheQuality="auto" android:gravity="center|center_horizontal"
+			android:textSize="42sp">
+		</TextView>
+
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/body" android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_weight=".95">
+
+
+		<LinearLayout android:id="@+id/LInputs"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_width="match_parent">
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/LHeight">
+				<EditText android:maxLines="1" android:layout_height="wrap_content"
+					android:digits="0,1,2,3,4,5,6,7,8,9" android:layout_weight="1"
+					android:inputType="phone" android:hint="@string/heightHint"
+					android:layout_width="wrap_content" android:id="@+id/txtHeight"></EditText>
+
+				<TextView android:layout_height="wrap_content" android:id="@+id/lblUnitsHeight"
+					android:textSize="30sp" android:layout_weight=".2" android:text="cm"
+					android:gravity="center" android:layout_width="wrap_content"
+					android:layout_gravity="center"></TextView>
+			</LinearLayout>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/LWeight" android:layout_width="fill_parent">
+
+
+				<EditText android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:hint="@string/weightHint"
+					android:digits="0,1,2,3,4,5,6,7,8,9" android:id="@+id/txtWeight"
+					android:maxLines="1" android:inputType="phone"
+					android:layout_weight="1"></EditText>
+
+				<TextView android:id="@+id/lblUnitsWeight"
+					android:textSize="30sp" android:layout_height="wrap_content"
+					android:text="kg" android:layout_width="wrap_content"
+					android:layout_weight=".2" android:layout_gravity="center"
+					android:gravity="center"></TextView>
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+		<Button android:id="@+id/btnCalculate" android:text="@string/btnCalculate"
+			android:gravity="center" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:textStyle="bold"></Button>
+
+		<LinearLayout android:id="@+id/LBMI"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:layout_width="match_parent">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/YourBMI"
+				android:id="@+id/txtYourBMI" android:textSize="24sp"
+				android:gravity="center"></TextView>
+
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/lblBMI_VALUE"
+				android:textSize="24sp" android:text="@string/bmi_value"
+				android:gravity="center" android:textStyle="bold"></TextView>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/LBMIMessage" android:layout_width="wrap_content"
+			android:orientation="vertical" android:gravity="center"
+			android:layout_gravity="center">
+			<TextView android:text="" android:id="@+id/BMIMessage"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="24sp" android:gravity="center"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/LIdealRange" android:gravity="center"
+			android:layout_gravity="center" android:orientation="vertical"
+			android:layout_width="wrap_content">
+			<TextView android:id="@+id/idealWeightPreMsg"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="24sp" android:textStyle="italic" android:gravity="center"
+				android:text="@string/preMsg" android:visibility="invisible"></TextView>
+
+			<TextView android:id="@+id/idealMsg" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="24sp"
+				android:textStyle="italic"></TextView>
+		</LinearLayout>
+
+
+		
+	</LinearLayout>
+	<!-- Please Dont Remove this ad, please -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:myapp="http://schemas.android.com/apk/res/com.mickstarify.BMIBuddy"
+
+			android:layout_height="wrap_content" android:layout_width="match_parent"
+			android:id="@+id/LAdmob" android:layout_gravity="bottom"
+			android:orientation="vertical" android:gravity="bottom">
+
+			<com.admob.android.ads.AdView
+				android:id="@+id/ad" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" myapp:backgroundColor="#000000"
+				myapp:primaryTextColor="#FFFFFF" myapp:secondaryTextColor="#CCCCCC"
+				android:layout_gravity="bottom" />
+
+		</LinearLayout>
+</LinearLayout>
